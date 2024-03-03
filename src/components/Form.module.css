@@ -1,0 +1,69 @@
+.login-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.login-form-container .form-title {
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 30px;
+  padding: 16px;
+  border-radius: 8px;
+  /* background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44); */
+  color: #093145;
+}
+
+.login-form {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  background-color: #cadcfc;
+  padding: 32px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+}
+.form-control-email,
+.form-control-password {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px 16px 24px 24px;
+}
+
+.form-control-email label,
+.form-control-password label {
+  color: #546194;
+}
+.form-control-email input,
+.form-control-password input {
+  all: unset;
+  border-bottom: 2px solid #97bc62;
+}
+
+.form-control-password {
+  position: relative;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 20px;
+  bottom: 73%;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+.bold {
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+  word-spacing: 2px;
+}

@@ -1,0 +1,43 @@
+.post {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  margin-bottom: 15px;
+}
+
+.post-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.post-content h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.post-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Style HTML content inside the post */
+.post-content p,
+.post-content h2 {
+  margin-bottom: 10px;
+}
+
+/* Adjust heading sizes if necessary */
+.post-content h2 {
+  font-size: 20px;
+}
+
+/* Add padding to the top of the post content */
+.post-content > *:first-child {
+  margin-top: 0;
+}
