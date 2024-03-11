@@ -20,7 +20,7 @@ const Blog = () => {
   async function handleScroll() {
     try {
       if (
-        window.innerHeight + document.documentElement.scrollTop + 1 >
+        window.innerHeight + document.documentElement.scrollTop + 1 >=
           document.documentElement.scrollHeight &&
         !isLoading &&
         !isLoadingMore // Check if data is not currently loading and not already loading more
@@ -37,6 +37,7 @@ const Blog = () => {
   }
 
   useEffect(() => {
+
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
